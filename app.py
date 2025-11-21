@@ -2,7 +2,12 @@ import os
 import json
 import logging
 import streamlit as st
-from dotenv import load_dotenv
+# 尝试加载 dotenv，如果在云端没有安装这个库，就直接跳过，不会报错
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 from google import genai
 from google.genai import types
 
