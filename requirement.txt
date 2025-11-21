@@ -1,4 +1,1 @@
-flask
-python-dotenv
-google-genai
-gunicorn
+streamlit
